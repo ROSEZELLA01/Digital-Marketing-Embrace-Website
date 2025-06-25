@@ -10,16 +10,19 @@ $primaryFont: "Inter", sans-serif;
     align-items: center;
     justify-content: center;
     gap: 80px;
+    padding: auto 120px ;
     .company-heading{
         font: 500 36px/150% $primaryFont;
         color: #000000;
         text-align: center;
     }
     .company-logos{
+        width: 100%;
         display: grid;
         grid-template-columns: 20% 20% 20% 20% 20%;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        gap: auto 94px;
+        gap: 32px;
+        align-content: center;
     }
 }
