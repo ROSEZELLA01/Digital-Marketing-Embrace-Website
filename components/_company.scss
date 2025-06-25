@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+$primaryFont: "Inter", sans-serif;
+
+.company{
+    background-color: #FAFAFA;
+    height: 552px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    .company-heading{
+        font: 500 36px/150% $primaryFont;
+        color: #000000;
+        text-align: center;
+    }
+    .company-logos{
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        justify-content: space-between;
+        align-items: center;
+        gap: auto 94px;
+    }
+}
