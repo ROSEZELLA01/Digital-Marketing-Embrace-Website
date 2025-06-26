@@ -1,0 +1,64 @@
+@import "./header";
+
+.commit {
+  width: 100%;
+  height: 536px;
+  padding: 0 120px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40;
+
+  .counter-div {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 216px);
+    grid-template-rows: repeat(2, 125px);
+    column-gap: 80px;
+    row-gap: 28px;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .counter {
+      .counter-heading {
+        font: 600 64px/100% $primaryFont;
+        color: #0b0b0b;
+      }
+      .counter-text {
+        font: 500 16px/24px $primaryFont;
+        color: #00000060;
+        text-transform: capitalize;
+      }
+    }
+  }
+  .commitment {
+    width: 50%;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    .commit-heading {
+      font: 500 64px/100% $primaryFont;
+      color: #000000;
+      text-transform: capitalize;
+    }
+    .commit-text {
+      font: 500 18px/32px $primaryFont;
+      color: #00000060;
+    }
+    .commit-but {
+      font: 600 18px/24px $primaryFont;
+      color: #3461ff;
+      background-color: #ffffff;
+      padding: 0;
+      border: none;
+      width: 120px;
+      margin-top: 20px;
+    }
+  }
+}

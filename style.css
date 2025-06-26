@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 .nav {
   background-color: #ffffff;
   height: 88px;
@@ -117,25 +118,205 @@
   align-items: center;
   justify-content: center;
   gap: 80px;
-  padding: auto 120px;
 }
 .company .company-heading {
   font: 500 36px/150% "Inter", sans-serif;
   color: #000000;
   text-align: center;
+  text-transform: capitalize;
 }
 .company .company-logos {
   width: 100%;
   display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-columns: repeat(5, 200px);
+  grid-template-rows: repeat(2, 50px);
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 32px;
+  padding: 0 120px;
+}
+.company .company-logos .company-logo {
+  width: 170px;
+  height: 48px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  align-self: center;
+}
+
+.nav {
+  background-color: #ffffff;
+  height: 88px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1254901961);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 120px;
+}
+.nav .logo {
+  width: 144px;
+  height: 32px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.nav .links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 32px;
-  align-content: center;
+  gap: 40px;
+}
+.nav .links .link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  font-family: "Inter", sans-serif;
+  transition: all 0.5s ease-in;
+}
+.nav .links .link:hover {
+  color: #3461FF;
+  transform: scale(1.1);
+}
+.nav .nav-button {
+  background-color: #3461FF;
+  padding: 16px 24px;
+  font-size: 16px;
+  font-weight: 500px;
+  line-height: 20px;
+  font-family: "Inter", sans-serif;
+  border: none;
+  border-radius: 70px;
+  color: #ffffff;
+  transition: all 0.5s ease-in;
+}
+.nav .nav-button:hover {
+  transform: scale(0.9);
+  border: 1px solid #3461FF;
+  background-color: #ffffff;
+  color: #3461FF;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 120px;
+  gap: 72px;
+}
+.hero .hero-text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.hero .hero-text .hero-h1 {
+  font: 600 80px/88px "Inter", sans-serif;
+  color: #000000;
+}
+.hero .hero-text .hero-p {
+  font: 500 20px/32px "Inter", sans-serif;
+  color: rgba(0, 0, 0, 0.3764705882);
+}
+.hero .hero-text .hero-form .hero-email {
+  height: 64px;
+  padding: 16px 18px;
+  background-color: FAFAFA;
+  border: 1px solid rgba(0, 0, 0, 0.1254901961);
+  border-radius: 37px;
+  font: 500 18px "Inter", sans-serif;
+  color: #AAAAAA;
+}
+.hero .hero-text .hero-submit {
+  background-color: #3461FF;
+  padding: 16px 24px;
+  font-size: 16px;
+  font-weight: 500px;
+  line-height: 20px;
+  font-family: "Inter", sans-serif;
+  border: none;
+  border-radius: 70px;
+  color: #ffffff;
+}
+.hero .hero-img-div {
+  width: 50%;
+}
+.hero .hero-img-div .hero-img {
+  width: 100%;
+  height: 600px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.commit {
+  width: 100%;
+  height: 536px;
+  padding: 0 120px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40;
+}
+.commit .counter-div {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 216px);
+  grid-template-rows: repeat(2, 125px);
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+  row-gap: 28px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.commit .counter-div .counter .counter-heading {
+  font: 600 64px/100% "Inter", sans-serif;
+  color: #0b0b0b;
+}
+.commit .counter-div .counter .counter-text {
+  font: 500 16px/24px "Inter", sans-serif;
+  color: rgba(0, 0, 0, 0.3764705882);
+  text-transform: capitalize;
+}
+.commit .commitment {
+  width: 50%;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.commit .commitment .commit-heading {
+  font: 500 64px/100% "Inter", sans-serif;
+  color: #000000;
+  text-transform: capitalize;
+}
+.commit .commitment .commit-text {
+  font: 500 18px/32px "Inter", sans-serif;
+  color: rgba(0, 0, 0, 0.3764705882);
+}
+.commit .commitment .commit-but {
+  font: 600 18px/24px "Inter", sans-serif;
+  color: #3461ff;
+  background-color: #ffffff;
+  padding: 0;
+  border: none;
+  width: 120px;
+  margin-top: 20px;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  padding-bottom: 500px;
 }/*# sourceMappingURL=style.css.map */
