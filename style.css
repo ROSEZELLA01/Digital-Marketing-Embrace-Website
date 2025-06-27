@@ -424,6 +424,62 @@
 .howItWorks {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 120px;
+  height: 804px;
+}
+.howItWorks .hows {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.howItWorks .hows .how .how-heading {
+  font: 500 64px/100% "Inter", sans-serif;
+  color: #000000;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.howItWorks .hows .how .how-text {
+  font: 500 18px/36px "Inter", sans-serif;
+  color: rgba(0, 0, 0, 0.3764705882);
+  width: 499px;
+}
+.howItWorks .hows .how .how-img {
+  width: 487px;
+  height: 311px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.howItWorks .works {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+.howItWorks .works .work {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+}
+.howItWorks .works .work .work-img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.howItWorks .works .work .work-text .work-heading {
+  font: 500 32px/32px "Inter", sans-serif;
+  color: #000000;
+}
+.howItWorks .works .work .work-text .work-p {
+  font: 500 16px/32px "Inter", sans-serif;
+  color: rgba(0, 0, 0, 0.3764705882);
+  margin-top: 8px;
 }
 
 * {

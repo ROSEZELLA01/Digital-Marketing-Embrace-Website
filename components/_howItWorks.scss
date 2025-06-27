@@ -1,6 +1,67 @@
 @import "./header";
 
-.howItWorks{
+.howItWorks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 120px;
+  height: 804px;
+
+  .hows {
+    width: 50%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 80px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .how {
+      
+      .how-heading {
+        font:500 64px/100% $primaryFont ;
+        color: #000000;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+      }
+      .how-text{
+        font:500 18px/36px $primaryFont ;
+        color: #00000060;
+        width: 499px;
+      }
+      .how-img{
+        width: 487px;
+        height: 311px;
+        object-fit: contain;
+      }
+    }
+  }
+  .works{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    .work{
+        display: flex;
+        flex-direction: row;
+    align-items: center;
+        gap: 32px;
+
+        .work-img{
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+        }
+        .work-text{
+            .work-heading{
+                font:500 32px/32px $primaryFont ;
+                color: #000000;
+            }
+            .work-p{
+                font:500 16px/32px $primaryFont ;
+                color: #00000060;
+                margin-top: 8px;
+            }
+        }
+    }
+  }
 }
