@@ -1,1 +1,48 @@
 @import "./header";
+
+.our_work{
+    padding: 40px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+    .our_work_div{
+        .our_work_div_h{
+            font: 500 64px/100% $primaryFont;
+            color: #000000;
+            text-align: center
+        }
+        .our_work_div_p{
+            font: 500 18px/32px $primaryFont;
+            color: #00000060;
+            text-align: center
+        }
+    }
+    .work_display{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        .work_display_div{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            .work_display_p{
+                font: 500 28px/100% $primaryFont;
+                text-align: center;
+                color: #000000;
+            }
+        }
+    }
+    .our_work_button{
+        padding: 16px 48px;
+        background-color: #3461FF;
+        color: #ffffff;
+        border-radius: 64px;
+        border: none;
+        font: 500 24px/100% $primaryFont;
+        width: 205px;
+        align-self: center;
+        margin-top: 20px;
+    }
+}
