@@ -747,7 +747,7 @@
 }
 
 .brands {
-  padding: 40px 20px;
+  padding: 64px 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -763,13 +763,34 @@
   border-radius: 32px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 180px;
 }
 .brands .brand .brand-heading {
   font: 500 64px/87px "Inter", sans-serif;
   color: #ffffff;
   width: 393px;
 }
+.brands .brand .branding {
+  width: 483px;
+}
+.brands .brand .branding .branding_p {
+  font: 500 20px/40px "Inter", sans-serif;
+  color: #ffffff;
+}
+.brands .brand .branding .branding_but {
+  padding: 16px 48px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 64px;
+  border: none;
+  font: 500 24px/100% "Inter", sans-serif;
+  width: 205px;
+  align-self: left;
+  margin-top: 32px;
+}
+
 * {
   padding: 0;
   margin: 0;
