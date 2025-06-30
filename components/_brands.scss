@@ -1,1 +1,14 @@
 @import "./header";
+.brands{
+    padding: 40px 20px;
+
+    .brand{
+        width: 90%;
+        height: 371px;
+        background-image: url("../Images/CTA\ Banner.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 32px;
+    }
+}
