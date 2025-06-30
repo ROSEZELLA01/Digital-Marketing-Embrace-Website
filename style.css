@@ -748,6 +748,10 @@
 
 .brands {
   padding: 40px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .brands .brand {
   width: 90%;
@@ -757,8 +761,15 @@
   background-size: cover;
   background-position: center;
   border-radius: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
+.brands .brand .brand-heading {
+  font: 500 64px/87px "Inter", sans-serif;
+  color: #ffffff;
+  width: 393px;
+}
 * {
   padding: 0;
   margin: 0;

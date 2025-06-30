@@ -1,6 +1,10 @@
 @import "./header";
 .brands{
     padding: 40px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
     .brand{
         width: 90%;
@@ -10,5 +14,19 @@
         background-size: cover;
         background-position: center;
         border-radius: 32px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+
+        .brand-heading{
+            font: 500 64px/87px $primaryFont;
+            color: #ffffff;
+            width: 393px;
+
+            .branding{
+                
+            }
+        }
     }
 }
