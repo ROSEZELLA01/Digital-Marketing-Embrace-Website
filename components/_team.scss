@@ -1,1 +1,52 @@
 @import "./header";
+
+$primaryFont: "Inter", sans-serif;
+
+
+
+.teams{
+    display: flex;
+    flex-direction: row;
+    padding: 64px 120px;
+    gap: 80px;
+    justify-content: center;
+
+    .team_image{
+        .team_img{
+            width: 600px;
+            height: 400px;
+            object-fit: cover;
+        }
+    }
+.team_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .team{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .team_heading{
+            font: 500 64px/150% $primaryFont;
+            color: #000000;
+        }
+        .team_text{
+            font: 400 16px/32px $primaryFont;
+            color: #00000060;
+        }
+        
+    }
+    .team_but{
+        padding: 16px 48px;
+        background-color: #3461FF;
+        color: #ffffff;
+        border-radius: 64px;
+        border: none;
+        font: 500 24px/100% $primaryFont;
+        width: 227px;
+        // align-self: center;
+        margin-top: 20px;
+    }
+}
+}
