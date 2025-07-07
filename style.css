@@ -6,6 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 .nav {
   background-color: #ffffff;
   height: 88px;
@@ -1084,6 +1085,76 @@
   font: 500 24px/100% "Inter", sans-serif;
   width: 227px;
   margin-top: 20px;
+}
+
+.testimonials {
+  width: 100%;
+  padding: 64px 120px;
+}
+.testimonials .testimonials_div .testimonials_heading {
+  font: 500 64px/150% "Inter", sans-serif;
+  color: #000000;
+  text-transform: capitalize;
+}
+.testimonials .testimonials_main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.testimonials .testimonials_main .testimonial {
+  width: 512px;
+  height: 312px;
+  background-color: #F8F9FF;
+  border-radius: 30px;
+  padding: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  color: #000000;
+}
+.testimonials .testimonials_main .testimonial .testimonial_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.testimonials .testimonials_main .testimonial .testimonial_header img {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.testimonials .testimonials_main .testimonial .testimonial_header .testimonial_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 12px;
+}
+.testimonials .testimonials_main .testimonial .testimonial_header .testimonial_info .testimonial_p1 {
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  font-size: 28px;
+}
+.testimonials .testimonials_main .testimonial .testimonial_header .testimonial_info .testimonial_p2 {
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+}
+.testimonials .testimonials_main .testimonial .testimonial_text {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.testimonial:hover {
+  background-color: #3461FF;
 }
 
 * {
