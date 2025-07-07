@@ -1,5 +1,35 @@
 @import "./header";
 
 .journey{
-
+    padding: 64px 120px;
+    .journey_div{
+        background-image: url("../Images/CTA\ Banner\ 2.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 455px;
+        border-radius: 56px;
+        padding-left:70px ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 80px;
+        .journey_heading{
+            font: 500 56px/63px $primaryFont;
+            color: #ffffff;
+            width: 521px;
+            text-transform: capitalize;
+        }
+        .journey_button{
+            padding: 16px 48px;
+        background-color: #3461FF;
+        color: #ffffff;
+        border-radius: 64px;
+        border: none;
+        font: 500 24px/100% $primaryFont;
+        width: 227px;
+        // align-self: center;
+        margin-top: 20px;
+        }
+    }
 }
