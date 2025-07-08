@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
@@ -1159,6 +1161,120 @@
 .testimonials .testimonials_main .testimonial:hover {
   background-color: #3461FF;
   color: #ffffff;
+}
+
+.help {
+  display: flex;
+  flex-direction: row;
+  gap: 120px;
+  height: 582px;
+  padding: 64px 120px;
+  align-items: center;
+}
+.help .faqs {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.help .faqs .accordion {
+  background-color: #ffffff;
+  color: #000;
+  cursor: pointer;
+  padding: 20px 12px;
+  width: 100%;
+  border-top: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1254901961);
+  border-left: none;
+  border-right: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  line-height: 32px;
+  transition: 0.4s;
+  font-weight: 500;
+}
+.help .faqs .active, .help .faqs .accordion:hover {
+  background-color: rgba(52, 97, 255, 0.1254901961);
+}
+.help .faqs .accordion:after {
+  content: "+";
+  color: #000000;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.help .faqs .active:after {
+  content: "−";
+}
+.help .faqs .panel {
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0 18px;
+  background-color: rgb(255, 255, 255);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.help .faqs .panel_text {
+  font: 400 16px/32px "Inter", sans-serif;
+  color: rgba(0, 0, 0, 0.3764705882);
+  margin-bottom: 20;
+}
+.help .help_div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+}
+.help .help_div .help_heading {
+  font: 500 40px/54px "Inter", sans-serif;
+  color: #000000;
+  width: 100%;
+}
+.help .help_div .help_text {
+  font: 500 20px/36px "Inter", sans-serif;
+  color: rgba(0, 0, 0, 0.3764705882);
+  width: 431px;
+}
+.help .help_div .email_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.help .help_div .email_div .email-input {
+  width: 312px;
+  height: 59px;
+  border-radius: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.1254901961);
+  padding: 18px 20px;
+  font: 500 16px/100% "Inter", sans-serif;
+  color: #AAAAAA;
+  outline: none;
+  background-color: #FAFAFA;
+}
+.help .help_div .email_div .submit-button {
+  padding: 18px 24px;
+  background-color: #3461FF;
+  color: #ffffff;
+  border-radius: 70px;
+  border: none;
+  font: 500 16px/100% "Inter", sans-serif;
+  width: 144px;
+  align-self: left;
+}
+.help .help_div .help_but {
+  padding: 0;
+  color: #3461FF;
+  background-color: #ffffff;
+  border: none;
+  font: 600 20px/24px "Inter", sans-serif;
+  width: 120px;
+  text-decoration: underline;
+  margin-top: 20px;
 }
 
 * {

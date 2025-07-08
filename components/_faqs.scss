@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+$primaryFont: "Inter", sans-serif;
+
+.help{
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+    height: 582px;
+    padding: 64px 120px;
+    // justify-content: space-evenly;
+    align-items: center;
+
+    .faqs{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        .accordion {
+            background-color: #ffffff;
+            color: #000;
+            cursor: pointer;
+            padding: 20px 12px;
+            width: 100%;
+            // border-top: 1px solid #00000020;
+            border-top: none;
+            border-bottom: 1px solid #00000020;
+            border-left: none;
+            border-right: none;
+            text-align: left;
+            outline: none;
+            font-size: 20px;
+            line-height: 32px;
+            transition: 0.4s;
+            font-weight: 500;
+          }
+          
+          .active, .accordion:hover {
+            background-color: #3461FF20;
+          }
+          
+          .accordion:after {
+            content: '\002B';
+            color: #000000;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+          }
+          
+          .active:after {
+            content: "\2212";
+          }
+
+          .panel {
+            height: fit-content;
+            padding: 0 18px;
+            background-color: rgb(255, 255, 255);
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+          }
+          .panel_text{
+            font: 400 16px/32px $primaryFont;
+            color: #00000060;
+            margin-bottom: 20;
+          }
+    }
+    .help_div{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 16px;
+
+        .help_heading{
+            font: 500 40px/54px $primaryFont;
+            color: #000000;
+            // text-align: center;
+            width: 100%;
+        }
+        .help_text{
+            font: 500 20px/36px $primaryFont;
+            color: #00000060;
+            // text-align: center;
+            width: 431px;
+        }
+        .email_div{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: 8px;
+            .email-input{
+                width: 312px;
+                height: 59px;
+                border-radius: 32px;
+                border: 1px solid #00000020;
+                padding: 18px 20px;
+                font: 500 16px/100% $primaryFont;
+                color: #AAAAAA;
+                outline: none;
+                background-color: #FAFAFA;
+            }
+            .submit-button{
+                padding: 18px 24px;
+                background-color: #3461FF;
+                color: #ffffff;
+                border-radius: 70px;
+                border: none;
+                font: 500 16px/100% $primaryFont;
+                width: 144px;
+                align-self: left;
+                // margin-top: 20px;
+            }
+        }
+        .help_but{
+            padding: 0;
+            color: #3461FF;
+            background-color: #ffffff;
+            // border-radius: 70px;
+            border: none;
+            font: 600 20px/24px $primaryFont;
+            width: 120px;
+            text-decoration: underline;
+                        // align-self: left;
+            margin-top: 20px;
+        }
+    }
+    
+}

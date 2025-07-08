@@ -301,6 +301,7 @@
           <button class="journey_button">Start Now</button>
         </div>
       </section>
+
      <section class="help">
       <div class="faqs">
         <button class="accordion">How do i sign up for the project?</button>
@@ -310,12 +311,49 @@
             Up" button. Fill out the registration form with your details and
             submit it. You will receive a confirmation email once your account
             is created.</p></div>
-
-
+            <button class="accordion">Thing to know before starting?</button>
+        <div class="panel">
+          <p class="panel_text">
+            Before starting a project, ensure you have a clear understanding of  You will receive a confirmation email once your account
+            is created </p> </div>
+            <button class="accordion">Does my company need help for marketing advices?</button>
+        <div class="panel">
+          <p class="panel_text">
+            To sign up for a project, visit our website and click on the "Sign
+            Up" button. Fill out the registration form with your details and
+            submit it. You will receive a confirmation email once your account
+            is created.</p></div>
       </div>
-      <div></div>
+
+      <div class="help_div">
+        <h2 class="help_heading">How we can help you?
+        </h2>
+        <p class="help_text">Follow our newsletter. We will regulary update our latest project and availability.</p>
+        <div class="email_div">
+          <input type="email" name="email" id="email" placeholder="Enter your email" class="email-input">
+          <input type="button" value="Let's Talk" class="submit-button">
+        </div>
+        
+        <button class="help_but">More FAQ </button>
+      </div>
      </section>
 
     </main>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          } 
+        });
+      }
+      </script>
   </body>
 </html>
