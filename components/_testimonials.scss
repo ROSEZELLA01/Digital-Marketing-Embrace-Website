@@ -28,13 +28,14 @@ $primaryFont: "Inter", sans-serif;
     gap: 20px;
 
     .testimonial {
-      width: 512px;
-      height: 360px;
+    //   width: 512px;
+    width: 33%;
+      height: 320px;
       //   max-width: 800px;
     //   background-color: #3461FF;
       background-color: #F8F9FF;
       border-radius: 30px;
-      padding: 40px;
+      padding: 20px;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       display: flex;
       flex-direction: column;
