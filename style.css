@@ -1090,6 +1090,9 @@
 .testimonials {
   width: 100%;
   padding: 64px 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 .testimonials .testimonials_div .testimonials_heading {
   font: 500 64px/150% "Inter", sans-serif;
@@ -1105,7 +1108,7 @@
 }
 .testimonials .testimonials_main .testimonial {
   width: 512px;
-  height: 312px;
+  height: 360px;
   background-color: #F8F9FF;
   border-radius: 30px;
   padding: 40px;
