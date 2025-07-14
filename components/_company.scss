@@ -37,3 +37,28 @@ $primaryFont: "Inter", sans-serif;
         
     }
 }
+
+@media screen and (max-width: 768px) {
+    .company{
+        height: auto;
+        padding: 0 20px;
+        gap: 40px;
+
+        .company-heading{
+            font-size: 24px;
+            line-height: 32px;
+        }
+        .company-logos{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, auto);
+            padding: 0;
+            gap: 16px;
+
+            .company-logo{
+                width: 100px;
+                height: auto;
+            }
+        }
+    }
+    
+}
