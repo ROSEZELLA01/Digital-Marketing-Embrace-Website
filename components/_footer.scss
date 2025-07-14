@@ -1,3 +1,111 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 $primaryFont: "Inter", sans-serif;
+.footer_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height:392px;
+    background-color: #FAFAFA;
+    padding: 64px 120px;
+
+    .footer_logo{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .footer_img{
+            width: 186px;
+            height: 42px;
+            object-fit: contain;
+            object-position: left;
+        }
+        .social_media{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 16px;
+
+            .social_icon{
+                width: 28px;
+                height: 28px;
+                object-fit: contain;
+                object-position: left;
+            }
+        }
+        .footer_but{
+            padding: 16px 48px;
+            background-color: #3461FF;
+            color: #ffffff;
+            border-radius: 69px;
+            border: none;
+            font: 500 20px/100% $primaryFont;
+            // width: 217px;
+            // align-self: center;
+            margin-top: 20px;
+        }
+    }
+    .footer_quick_links{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 70px;
+
+        .footer_links{
+            width: 140px;
+
+            .footer_ul{
+                display: flex;
+                flex-direction: column;
+                gap: 48px;
+                list-style: none;
+                padding: 0;
+
+                .footer_li{
+                    font: 500 16px/20px $primaryFont;
+                    color: #000000;
+                    text-decoration: none;
+
+                    .footer_link{
+                        color: inherit;
+                        text-decoration: none;
+                        transition: color 0.3s;
+
+                        &:hover{
+                            color: #3461FF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer_copyright{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 119px;
+    padding: 40px 120px;
+    gap: 16px;
+    font: 500 14px/20px $primaryFont;
+    color: #ffffff;
+    background-color: #000000;
+
+    .footer_text{
+        text-align: left;
+        // margin-top: 20px;
+
+        .footer_copyright_link{
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s;
+
+            &:hover{
+                color: #3461FF;
+            }
+        }
+    }
+}

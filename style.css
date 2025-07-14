@@ -1278,6 +1278,105 @@
   margin-top: 20px;
 }
 
+.footer_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 392px;
+  background-color: #FAFAFA;
+  padding: 64px 120px;
+}
+.footer_div .footer_logo {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.footer_div .footer_logo .footer_img {
+  width: 186px;
+  height: 42px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: left;
+     object-position: left;
+}
+.footer_div .footer_logo .social_media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 16px;
+}
+.footer_div .footer_logo .social_media .social_icon {
+  width: 28px;
+  height: 28px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: left;
+     object-position: left;
+}
+.footer_div .footer_logo .footer_but {
+  padding: 16px 48px;
+  background-color: #3461FF;
+  color: #ffffff;
+  border-radius: 69px;
+  border: none;
+  font: 500 20px/100% "Inter", sans-serif;
+  margin-top: 20px;
+}
+.footer_div .footer_quick_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 70px;
+}
+.footer_div .footer_quick_links .footer_links {
+  width: 140px;
+}
+.footer_div .footer_quick_links .footer_links .footer_ul {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  list-style: none;
+  padding: 0;
+}
+.footer_div .footer_quick_links .footer_links .footer_ul .footer_li {
+  font: 500 16px/20px "Inter", sans-serif;
+  color: #000000;
+  text-decoration: none;
+}
+.footer_div .footer_quick_links .footer_links .footer_ul .footer_li .footer_link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer_div .footer_quick_links .footer_links .footer_ul .footer_li .footer_link:hover {
+  color: #3461FF;
+}
+
+.footer_copyright {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 119px;
+  padding: 40px 120px;
+  gap: 16px;
+  font: 500 14px/20px "Inter", sans-serif;
+  color: #ffffff;
+  background-color: #000000;
+}
+.footer_copyright .footer_text {
+  text-align: left;
+}
+.footer_copyright .footer_text .footer_copyright_link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer_copyright .footer_text .footer_copyright_link:hover {
+  color: #3461FF;
+}
+
 * {
   padding: 0;
   margin: 0;
