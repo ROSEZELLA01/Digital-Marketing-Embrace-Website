@@ -17,7 +17,7 @@
     grid-template-columns: repeat(2, 216px);
     grid-template-rows: repeat(2, 125px);
     column-gap: 80px;
-    row-gap: 28px;
+    grid-row-gap: 28px;
     justify-content: flex-start;
     align-items: flex-start;
 
@@ -52,13 +52,112 @@
       color: #00000060;
     }
     .commit-but {
-      font: 600 18px/24px $primaryFont;
+      font: 600 16px/24px $primaryFont;
       color: #3461ff;
       background-color: #ffffff;
       padding: 0;
       border: none;
       width: 120px;
       margin-top: 20px;
+    }
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .commit {
+    // background-color: aqua;
+    width: 1200px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: center;
+    height: 536px;
+    padding: 80px 20px;
+    gap: 48px;
+    
+  }
+  
+}
+@media screen and (max-width:768px) {
+  .commit {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 80px 20px;
+    gap: 48px;
+
+    .counter-div {
+      width: 100%;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, auto);
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+      grid-row-gap: 40px;
+
+      .counter {
+        text-align: center;
+        .counter-heading {
+          font: 600 40px/100% $primaryFont;
+          margin-bottom: 8px;
+        }
+       
+        
+      }
+    }
+
+    .commitment {
+      width: 100%;
+      text-align: center;
+      align-items: center;
+      gap: 12px;
+
+      .commit-heading {
+        font-size: 36px;
+        line-height: 44px;
+      }
+      .commit-text {
+        width: 80%;
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .commit-but {
+        margin-top: 8px;
+      }
+    }
+  }
+  
+}
+@media screen and (max-width: 480px) {
+  .commit {
+    .counter-div {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, auto);
+      justify-content: center;
+      align-items: flex-start;
+      gap: 16px;
+
+      .counter {
+        .counter-heading {
+          font: 600 32px/100% $primaryFont;
+        }
+        .counter-text {
+          font: 500 12px/24px $primaryFont;
+        }
+      }
+    }
+
+    .commitment {
+      .commit-heading {
+        font-size: 28px;
+        line-height: 32px;
+      }
+      .commit-text {
+        width: 90%;
+        font-size: 12px;
+        line-height: 22px;
+      }
     }
   }
 }

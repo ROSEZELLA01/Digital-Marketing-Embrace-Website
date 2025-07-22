@@ -685,7 +685,7 @@
   grid-template-rows: repeat(2, 125px);
   -moz-column-gap: 80px;
        column-gap: 80px;
-  row-gap: 28px;
+  grid-row-gap: 28px;
   justify-content: flex-start;
   align-items: flex-start;
 }
@@ -717,7 +717,7 @@
   color: rgba(0, 0, 0, 0.3764705882);
 }
 .commit .commitment .commit-but {
-  font: 600 18px/24px "Inter", sans-serif;
+  font: 600 16px/24px "Inter", sans-serif;
   color: #3461ff;
   background-color: #ffffff;
   padding: 0;
@@ -726,6 +726,85 @@
   margin-top: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .commit {
+    width: 1200px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: center;
+    height: 536px;
+    padding: 80px 20px;
+    gap: 48px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .commit {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 80px 20px;
+    gap: 48px;
+  }
+  .commit .counter-div {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    grid-row-gap: 40px;
+  }
+  .commit .counter-div .counter {
+    text-align: center;
+  }
+  .commit .counter-div .counter .counter-heading {
+    font: 600 40px/100% "Inter", sans-serif;
+    margin-bottom: 8px;
+  }
+  .commit .commitment {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    gap: 12px;
+  }
+  .commit .commitment .commit-heading {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .commit .commitment .commit-text {
+    width: 80%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .commit .commitment .commit-but {
+    margin-top: 8px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .commit .counter-div {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .commit .counter-div .counter .counter-heading {
+    font: 600 32px/100% "Inter", sans-serif;
+  }
+  .commit .counter-div .counter .counter-text {
+    font: 500 12px/24px "Inter", sans-serif;
+  }
+  .commit .commitment .commit-heading {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .commit .commitment .commit-text {
+    width: 90%;
+    font-size: 12px;
+    line-height: 22px;
+  }
+}
 .nav {
   background-color: #ffffff;
   height: 88px;
