@@ -218,3 +218,86 @@ $primaryFont: "Inter", sans-serif;
     }
     
 }
+@media screen and (max-width: 480px) {
+    .nav{
+        padding: 20px;
+        gap: 10px;
+        .logo{
+            width: 120px;
+            height: 28px;
+            object-fit: contain;
+            object-position: left;
+        }
+
+        .links, .nav-button{
+            display: none;
+        }
+        .hamburger{
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+
+            .bar{
+                width: 24px;
+                height: 2px;
+            }
+        }
+    }
+    .hero{
+        padding: 40px 20px;
+
+        .hero-text{
+            width: 100%;
+            text-align: center;
+            .hero-h1{
+                font: 600 28px/36px $primaryFont;
+                color: #000000;
+            }
+            .hero-p{
+                font: 500 14px/18px $primaryFont;
+                color: #00000060;
+            }
+            .hero-form{
+                width: 100%;
+                display: flex;
+                gap: 8px;
+                justify-content: center;
+                align-items: center;
+                .hero-email{
+                    width: 60%;
+                    display: block;
+                    height: 36px;
+                    padding: 4px 12px;
+                    background-color: FAFAFA;
+                    border: 1px solid #00000020;
+                    border-radius: 37px;
+                    font: 500 12px $primaryFont;
+                    color: #AAAAAA;
+            }
+                    }
+            
+                    .hero-submit{
+                        display: block;
+                        width: 30%;
+                        height: 36px;
+                        background-color: #3461FF;
+                        padding: 4px 12px;
+                        font-size: 12px;
+                        font-weight: 500px;
+                        line-height: 18px;
+                        font-family: $primaryFont;
+                        border: none;
+                        border-radius: 70px;
+                        color: #ffffff;
+            
+                    }
+        }
+        .hero-img-div{
+            width: 100%;
+            .hero-img{
+                height: 300px;
+            }
+        }
+    }
+    
+}

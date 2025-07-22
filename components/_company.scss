@@ -39,7 +39,7 @@ $primaryFont: "Inter", sans-serif;
 }
 @media screen and (min-width: 1200px) {
     .company{
-        height: 560px;
+        height: 540px;
         padding: 80px 20px;
         justify-content: center;
         gap: 40px;
@@ -86,6 +86,33 @@ $primaryFont: "Inter", sans-serif;
             .company-logo{
                 width: 100px;
                 height: auto;
+                justify-self: center;
+            }
+        }
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    .company{
+        .company-heading{
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 28px;
+        }
+        .company-logos{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 48px);
+            justify-content: center;
+            align-content: center;
+            width: 90%;
+            padding: 0;
+            gap: 16px;
+            margin: auto;
+
+            .company-logo{
+                width: 80px;
+                height: auto;
+                justify-self: center;
             }
         }
     }
