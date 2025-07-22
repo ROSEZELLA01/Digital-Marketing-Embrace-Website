@@ -742,8 +742,9 @@
   .commit {
     flex-direction: column;
     align-items: center;
-    height: auto;
-    padding: 80px 20px;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 60px 20px;
     gap: 48px;
   }
   .commit .counter-div {
@@ -767,6 +768,8 @@
     text-align: center;
     align-items: center;
     gap: 12px;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .commit .commitment .commit-heading {
     font-size: 36px;
@@ -1142,6 +1145,110 @@
   margin-top: 8px;
 }
 
+@media screen and (max-width: 768px) {
+  .howItWorks {
+    flex-direction: column;
+    padding: 40px 20px;
+    height: auto;
+    gap: 40px;
+  }
+  .howItWorks .hows, .howItWorks .works {
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+  }
+  .howItWorks .hows .how {
+    text-align: center;
+  }
+  .howItWorks .hows .how .how-heading {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .howItWorks .hows .how .how-text {
+    width: 70%;
+    font-size: 16px;
+    line-height: 24px;
+    justify-self: center;
+  }
+  .howItWorks .hows .how .how-img {
+    width: 100%;
+    height: auto;
+  }
+  .howItWorks .works {
+    justify-content: center;
+  }
+  .howItWorks .works .work {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    gap: 20px;
+    width: 65%;
+  }
+  .howItWorks .works .work .work-img {
+    width: 40px;
+    height: 40px;
+  }
+  .howItWorks .works .work .work-text .work-heading {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .howItWorks .works .work .work-text .work-p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .howItWorks {
+    padding: 40px 20px;
+  }
+  .howItWorks .hows, .howItWorks .works {
+    width: 100%;
+  }
+  .howItWorks .hows .how .how-heading {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .howItWorks .hows .how .how-text {
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .howItWorks .hows .how .how-img {
+    display: block;
+    width: 300px;
+    height: 300px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin: 12px;
+  }
+  .howItWorks .works {
+    gap: 28px;
+    justify-self: center;
+  }
+  .howItWorks .works .work {
+    flex-direction: row;
+    align-items: start;
+    width: 100%;
+    gap: 12px;
+  }
+  .howItWorks .works .work .work-img {
+    width: 40px;
+    height: 40px;
+  }
+  .howItWorks .works .work .work-text {
+    gap: 4px;
+  }
+  .howItWorks .works .work .work-text .work-heading {
+    font-size: 18px;
+    line-height: 18px;
+    text-align: left;
+  }
+  .howItWorks .works .work .work-text .work-p {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+  }
+}
 .nav {
   background-color: #ffffff;
   height: 88px;

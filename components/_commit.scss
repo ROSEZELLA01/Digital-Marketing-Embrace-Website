@@ -83,8 +83,8 @@
   .commit {
     flex-direction: column;
     align-items: center;
-    height: auto;
-    padding: 80px 20px;
+    height: fit-content;
+    padding: 60px 20px;
     gap: 48px;
 
     .counter-div {
@@ -112,6 +112,7 @@
       text-align: center;
       align-items: center;
       gap: 12px;
+      height: fit-content;
 
       .commit-heading {
         font-size: 36px;
