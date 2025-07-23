@@ -46,6 +46,13 @@
         margin-top: 20px;
     }
 }
+@media screen and (min-width: 1200px){
+    .our_work{
+        padding: 40px 200px;
+        max-width: 1200px;
+        margin: 0 auto;
+        
+}
 @media screen and (max-width: 768px) {
     .our_work{
         padding:40px 20px;

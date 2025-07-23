@@ -1580,6 +1580,31 @@
   margin-top: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .our_work {
+    padding: 40px 200px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .our_work .our_work_div .our_work_div_h {
+    font-size: 64px;
+  }
+  .our_work .our_work_div .our_work_div_p {
+    font-size: 18px;
+  }
+  .our_work .work_display {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+  .our_work .work_display .work_display_div .work_display_p {
+    font-size: 28px;
+  }
+  .our_work .our_work_button {
+    padding: 16px 48px;
+    font-size: 24px;
+  }
+}
 @media screen and (max-width: 768px) {
   .our_work {
     padding: 40px 20px;
