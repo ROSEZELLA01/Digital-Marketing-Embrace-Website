@@ -66,6 +66,20 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .howItWorks{
+    width: 1200px;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-self: center;
+align-items: center;
+gap: 48px;
+padding: 0;
+
+  }
+}
+  
+
 @media screen and (max-width:768px){
   .howItWorks {
     flex-direction: column;
