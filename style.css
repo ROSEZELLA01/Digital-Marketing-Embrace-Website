@@ -2795,6 +2795,141 @@
   margin-top: 20px;
 }
 
+@media screen and (min-width: 1400px) {
+  .journey {
+    width: 1400px;
+    justify-self: center;
+  }
+}
+@media screen and (max-width: 1310px) {
+  .journey {
+    padding: 64px 40px;
+  }
+  .journey .journey_div {
+    background-image: url("../Images/CTA Banner 2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 455px;
+    border-radius: 56px;
+    padding-left: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+  }
+  .journey .journey_div .journey_heading {
+    font: 500 52px/63px "Inter", sans-serif;
+    color: #ffffff;
+    width: 521px;
+    text-transform: capitalize;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .journey {
+    padding: 40px 40px;
+  }
+  .journey .journey_div {
+    background-image: url("../Images/CTA Banner 2.png");
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 355px;
+    border-radius: 56px;
+    padding-left: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .journey .journey_div .journey_heading {
+    font: 500 48px/63px "Inter", sans-serif;
+    color: #ffffff;
+    width: 500px;
+    text-transform: capitalize;
+  }
+  .journey .journey_div .journey_button {
+    padding: 14px 40px;
+    background-color: #3461FF;
+    color: #ffffff;
+    border-radius: 64px;
+    border: none;
+    font: 500 20px/100% "Inter", sans-serif;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .journey {
+    padding: 40px 20px;
+  }
+  .journey .journey_div {
+    background-image: url("../Images/CTA Banner 2.png");
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 270px;
+    border-radius: 56px;
+    padding: 40px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .journey .journey_div .journey_heading {
+    font: 500 32px/48px "Inter", sans-serif;
+    color: #ffffff;
+    width: 70%;
+    text-transform: capitalize;
+  }
+  .journey .journey_div .journey_button {
+    padding: 14px 40px;
+    background-color: #3461FF;
+    color: #ffffff;
+    border-radius: 64px;
+    border: none;
+    font: 500 16px/100% "Inter", sans-serif;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 8px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .journey {
+    padding: 40px 20px;
+  }
+  .journey .journey_div {
+    background-image: url("../Images/CTA Banner 2.png");
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 230px;
+    border-radius: 36px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .journey .journey_div .journey_heading {
+    font: 500 24px/48px "Inter", sans-serif;
+    color: #ffffff;
+    width: 100%;
+    text-transform: capitalize;
+  }
+  .journey .journey_div .journey_button {
+    padding: 12px 32px;
+    background-color: #3461FF;
+    color: #ffffff;
+    border-radius: 64px;
+    border: none;
+    font: 500 14px/100% "Inter", sans-serif;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 8px;
+  }
+}
 .testimonials {
   width: 100%;
   padding: 64px 120px;
