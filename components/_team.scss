@@ -48,22 +48,26 @@ $primaryFont: "Inter", sans-serif;
   }
 }
 
-@media screen and (max-width:1300px) {
+@media screen and (min-width: 1400px) {
   .teams {
-  display: flex;
-  flex-direction: row;
-  padding: 64px 40px;
-  gap: 80px;
-  justify-content: center;
+    width: 1400px;
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 1380px) {
+    .teams {
 
   .team_image {
+    width: 50%;
     .team_img {
-      width: 600px;
-      height: 400px;
-      object-fit: cover;
+      width: 100%;
+      height: fit-content;
+      object-fit: contain;
     }
   }
   .team_main {
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -73,7 +77,7 @@ $primaryFont: "Inter", sans-serif;
       gap: 20px;
 
       .team_heading {
-        font: 500 35px/150% $primaryFont;
+        font: 500 48px/150% $primaryFont;
         color: #000000;
       }
       .team_text {
@@ -81,19 +85,43 @@ $primaryFont: "Inter", sans-serif;
         color: #00000060;
       }
     }
-    .team_but {
-      padding: 16px 48px;
-      background-color: #3461ff;
-      color: #ffffff;
-      border-radius: 64px;
-      border: none;
-      font: 500 24px/100% $primaryFont;
-      width: 227px;
-      // align-self: center;
-      margin-top: 20px;
-    }
   }
 }
+  
+}
+
+@media screen and (max-width: 1150px) {
+  .teams {
+    padding: 64px 40px;
+    justify-content: space-between;
+    gap: 40px;
+    .team_image {
+      width: 50%;
+      .team_img {
+        width: 100%;
+        height: fit-content;
+        object-fit: contain;
+      }
+    }
+    .team_main {
+      width: 50%;
+      .team {
+        .team_heading {
+          font: 500 36px/150% $primaryFont;
+          color: #000000;
+        }
+        .team_text {
+          font: 400 16px/28px $primaryFont;
+          color: #00000060;
+        }
+      }
+      .team_but {
+        padding: 16px 40px;
+        font: 500 18px/100% $primaryFont;
+        width: fit-content;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -116,6 +144,7 @@ $primaryFont: "Inter", sans-serif;
       flex-direction: column;
       align-items: center;
       text-align: center;
+      width: 100%;
       .team {
         gap: 12px;
 

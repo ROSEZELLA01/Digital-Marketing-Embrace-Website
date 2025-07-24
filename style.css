@@ -2339,21 +2339,25 @@
   margin-top: 20px;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (min-width: 1400px) {
   .teams {
-    display: flex;
-    flex-direction: row;
-    padding: 64px 40px;
-    gap: 80px;
-    justify-content: center;
+    width: 1400px;
+    justify-self: center;
+  }
+}
+@media screen and (max-width: 1380px) {
+  .teams .team_image {
+    width: 50%;
   }
   .teams .team_image .team_img {
-    width: 600px;
-    height: 400px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .teams .team_main {
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -2364,22 +2368,46 @@
     gap: 20px;
   }
   .teams .team_main .team .team_heading {
-    font: 500 35px/150% "Inter", sans-serif;
+    font: 500 48px/150% "Inter", sans-serif;
     color: #000000;
   }
   .teams .team_main .team .team_text {
     font: 400 16px/32px "Inter", sans-serif;
     color: rgba(0, 0, 0, 0.3764705882);
   }
+}
+@media screen and (max-width: 1150px) {
+  .teams {
+    padding: 64px 40px;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .teams .team_image {
+    width: 50%;
+  }
+  .teams .team_image .team_img {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .teams .team_main {
+    width: 50%;
+  }
+  .teams .team_main .team .team_heading {
+    font: 500 36px/150% "Inter", sans-serif;
+    color: #000000;
+  }
+  .teams .team_main .team .team_text {
+    font: 400 16px/28px "Inter", sans-serif;
+    color: rgba(0, 0, 0, 0.3764705882);
+  }
   .teams .team_main .team_but {
-    padding: 16px 48px;
-    background-color: #3461ff;
-    color: #ffffff;
-    border-radius: 64px;
-    border: none;
-    font: 500 24px/100% "Inter", sans-serif;
-    width: 227px;
-    margin-top: 20px;
+    padding: 16px 40px;
+    font: 500 18px/100% "Inter", sans-serif;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 @media screen and (max-width: 768px) {
@@ -2403,6 +2431,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 100%;
   }
   .teams .team_main .team {
     gap: 12px;
