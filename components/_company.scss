@@ -50,14 +50,16 @@ $primaryFont: "Inter", sans-serif;
             justify-content: center;
             align-content: center;
             width: 1400px;
-            padding: 0;
+            padding: 0 120px;
             gap: 34px;
             margin: auto;
             justify-self: center;
+            align-self: center;
 
             .company-logo{
                 width: 120px;
                 height: auto;
+                justify-self: center;
             }
         }
     }

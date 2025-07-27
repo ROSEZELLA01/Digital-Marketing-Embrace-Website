@@ -64,20 +64,167 @@
 
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
   .commit {
     // background-color: aqua;
-    width: 1200px;
+    width: 1400px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     justify-self: center;
     height: 536px;
-    padding: 80px 20px;
+    padding: 80px 120px;
     gap: 48px;
     
   }
   
+}
+@media screen and (max-width: 1280px) {
+  .commit {
+    // background-color: aqua;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: center;
+    height: 536px;
+    padding: 80px 80px;
+    gap: 48px;
+    
+  }
+  
+}
+@media screen and (max-width: 1104px) {
+ .commit {
+  width: 100%;
+  height: 536px;
+  padding: 0 40px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40;
+
+  .counter-div {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 216px);
+    grid-template-rows: repeat(2, 125px);
+    column-gap: 40px;
+    grid-row-gap: 28px;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .counter {
+      .counter-heading {
+        font: 600 52px/100% $primaryFont;
+        color: #0b0b0b;
+      }
+      .counter-text {
+        font: 500 16px/24px $primaryFont;
+        color: #00000060;
+        text-transform: capitalize;
+      }
+    }
+  }
+  .commitment {
+    width: 50%;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    .commit-heading {
+      font: 500 52px/100% $primaryFont;
+      color: #000000;
+      text-transform: capitalize;
+    }
+    .commit-text {
+      font: 500 16px/32px $primaryFont;
+      color: #00000060;
+    }
+    .commit-but {
+      font: 600 14px/24px $primaryFont;
+      color: #3461ff;
+      background-color: #ffffff;
+      padding: 0;
+      border: none;
+      width: 120px;
+      margin-top: 20px;
+    }
+  }
+
+}
+}
+@media screen and (max-width: 925px) {
+ .commit {
+  width: 100%;
+  height: 536px;
+  padding: 60px 40px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40;
+
+  .counter-div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 216px);
+    grid-template-rows: repeat(2, 125px);
+    column-gap: 40px;
+    grid-row-gap: 28px;
+    justify-content: center;
+    align-items: flex-start;
+
+    .counter {
+      .counter-heading {
+        font: 600 64px/100% $primaryFont;
+        color: #0b0b0b;
+      }
+      .counter-text {
+        font: 500 16px/24px $primaryFont;
+        color: #00000060;
+        text-transform: capitalize;
+      }
+    }
+  }
+  .commitment {
+    width: 100%;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+
+    .commit-heading {
+      font: 500 64px/100% $primaryFont;
+      color: #000000;
+      text-transform: capitalize;
+    }
+    .commit-text {
+      font: 500 18px/32px $primaryFont;
+      color: #00000060;
+      width: 70%;
+      text-align: center;
+    }
+    .commit-but {
+      font: 600 16px/24px $primaryFont;
+      color: #3461ff;
+      background-color: #ffffff;
+      padding: 0;
+      border: none;
+      width: 120px;
+      margin-top: 20px;
+    }
+  }
+
+}
 }
 @media screen and (max-width:768px) {
   .commit {
@@ -155,7 +302,7 @@
         line-height: 32px;
       }
       .commit-text {
-        width: 90%;
+        width: 100%;
         font-size: 12px;
         line-height: 22px;
       }
