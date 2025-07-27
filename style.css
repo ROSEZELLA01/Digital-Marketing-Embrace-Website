@@ -133,7 +133,7 @@
      object-fit: contain;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1440px) {
   header {
     display: flex;
     flex-direction: column;
@@ -142,16 +142,16 @@
   }
   .nav {
     justify-content: space-between;
-    min-width: 1200px;
-    padding: 20px 20px;
+    min-width: 1440px;
+    padding: 20px 120px;
     gap: 100px;
   }
   .hero {
     flex-direction: row;
     justify-content: center;
-    padding: 20px 20px;
+    padding: 20px 120px;
     gap: 72px;
-    min-width: 1200px;
+    min-width: 1440px;
   }
   .hero .hero-text {
     width: 40%;
@@ -172,6 +172,86 @@
     height: 600px;
     -o-object-fit: contain;
        object-fit: contain;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .nav {
+    padding: 18px 80px;
+  }
+  .hero {
+    padding: 80px 80px;
+    gap: 60px;
+  }
+  .hero .hero-text .hero-h1 {
+    font: 600 72px/80px "Inter", sans-serif;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .nav {
+    padding: 18px 40px;
+  }
+  .hero {
+    padding: 80px 40px;
+    gap: 60px;
+  }
+  .hero .hero-text .hero-h1 {
+    font: 600 60px/70px "Inter", sans-serif;
+  }
+  .hero .hero-text .hero-form .hero-email {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 12px 14px;
+    background-color: FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.1254901961);
+    border-radius: 37px;
+    font: 500 14px "Inter", sans-serif;
+    color: #AAAAAA;
+  }
+  .hero .hero-text .hero-submit {
+    background-color: #3461FF;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 20px;
+    font-family: "Inter", sans-serif;
+    border: none;
+    border-radius: 70px;
+    color: #ffffff;
+  }
+}
+@media screen and (max-width: 910px) {
+  .nav {
+    padding: 18px 40px;
+  }
+  .hero {
+    padding: 40px 40px;
+    gap: 40px;
+  }
+  .hero .hero-text .hero-h1 {
+    font: 600 48px/60px "Inter", sans-serif;
+  }
+  .hero .hero-text .hero-form .hero-email {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 12px 14px;
+    background-color: FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.1254901961);
+    border-radius: 37px;
+    font: 500 14px "Inter", sans-serif;
+    color: #AAAAAA;
+    width: 60%;
+  }
+  .hero .hero-text .hero-submit {
+    width: 30%;
+    background-color: #3461FF;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 20px;
+    font-family: "Inter", sans-serif;
+    border: none;
+    border-radius: 70px;
+    color: #ffffff;
   }
 }
 @media screen and (max-width: 768px) {
@@ -199,6 +279,29 @@
   .hero .hero-text .hero-h1 {
     font: 600 40px/48px "Inter", sans-serif;
     color: #000000;
+  }
+  .hero .hero-text .hero-form .hero-email {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 12px 14px;
+    background-color: FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.1254901961);
+    border-radius: 37px;
+    font: 500 14px "Inter", sans-serif;
+    color: #AAAAAA;
+    width: 50%;
+  }
+  .hero .hero-text .hero-submit {
+    width: 20%;
+    background-color: #3461FF;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 20px;
+    font-family: "Inter", sans-serif;
+    border: none;
+    border-radius: 70px;
+    color: #ffffff;
   }
   .hero .hero-img-div {
     width: 100%;
@@ -514,7 +617,7 @@
      object-fit: contain;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1440px) {
   header {
     display: flex;
     flex-direction: column;
@@ -523,16 +626,16 @@
   }
   .nav {
     justify-content: space-between;
-    min-width: 1200px;
-    padding: 20px 20px;
+    min-width: 1440px;
+    padding: 20px 120px;
     gap: 100px;
   }
   .hero {
     flex-direction: row;
     justify-content: center;
-    padding: 20px 20px;
+    padding: 20px 120px;
     gap: 72px;
-    min-width: 1200px;
+    min-width: 1440px;
   }
   .hero .hero-text {
     width: 40%;
@@ -553,6 +656,86 @@
     height: 600px;
     -o-object-fit: contain;
        object-fit: contain;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .nav {
+    padding: 18px 80px;
+  }
+  .hero {
+    padding: 80px 80px;
+    gap: 60px;
+  }
+  .hero .hero-text .hero-h1 {
+    font: 600 72px/80px "Inter", sans-serif;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .nav {
+    padding: 18px 40px;
+  }
+  .hero {
+    padding: 80px 40px;
+    gap: 60px;
+  }
+  .hero .hero-text .hero-h1 {
+    font: 600 60px/70px "Inter", sans-serif;
+  }
+  .hero .hero-text .hero-form .hero-email {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 12px 14px;
+    background-color: FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.1254901961);
+    border-radius: 37px;
+    font: 500 14px "Inter", sans-serif;
+    color: #AAAAAA;
+  }
+  .hero .hero-text .hero-submit {
+    background-color: #3461FF;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 20px;
+    font-family: "Inter", sans-serif;
+    border: none;
+    border-radius: 70px;
+    color: #ffffff;
+  }
+}
+@media screen and (max-width: 910px) {
+  .nav {
+    padding: 18px 40px;
+  }
+  .hero {
+    padding: 40px 40px;
+    gap: 40px;
+  }
+  .hero .hero-text .hero-h1 {
+    font: 600 48px/60px "Inter", sans-serif;
+  }
+  .hero .hero-text .hero-form .hero-email {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 12px 14px;
+    background-color: FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.1254901961);
+    border-radius: 37px;
+    font: 500 14px "Inter", sans-serif;
+    color: #AAAAAA;
+    width: 60%;
+  }
+  .hero .hero-text .hero-submit {
+    width: 30%;
+    background-color: #3461FF;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 20px;
+    font-family: "Inter", sans-serif;
+    border: none;
+    border-radius: 70px;
+    color: #ffffff;
   }
 }
 @media screen and (max-width: 768px) {
@@ -580,6 +763,29 @@
   .hero .hero-text .hero-h1 {
     font: 600 40px/48px "Inter", sans-serif;
     color: #000000;
+  }
+  .hero .hero-text .hero-form .hero-email {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 12px 14px;
+    background-color: FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.1254901961);
+    border-radius: 37px;
+    font: 500 14px "Inter", sans-serif;
+    color: #AAAAAA;
+    width: 50%;
+  }
+  .hero .hero-text .hero-submit {
+    width: 20%;
+    background-color: #3461FF;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 20px;
+    font-family: "Inter", sans-serif;
+    border: none;
+    border-radius: 70px;
+    color: #ffffff;
   }
   .hero .hero-img-div {
     width: 100%;
@@ -931,7 +1137,7 @@
      object-fit: contain;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1440px) {
   header {
     display: flex;
     flex-direction: column;
@@ -940,16 +1146,16 @@
   }
   .nav {
     justify-content: space-between;
-    min-width: 1200px;
-    padding: 20px 20px;
+    min-width: 1440px;
+    padding: 20px 120px;
     gap: 100px;
   }
   .hero {
     flex-direction: row;
     justify-content: center;
-    padding: 20px 20px;
+    padding: 20px 120px;
     gap: 72px;
-    min-width: 1200px;
+    min-width: 1440px;
   }
   .hero .hero-text {
     width: 40%;
@@ -970,6 +1176,86 @@
     height: 600px;
     -o-object-fit: contain;
        object-fit: contain;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .nav {
+    padding: 18px 80px;
+  }
+  .hero {
+    padding: 80px 80px;
+    gap: 60px;
+  }
+  .hero .hero-text .hero-h1 {
+    font: 600 72px/80px "Inter", sans-serif;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .nav {
+    padding: 18px 40px;
+  }
+  .hero {
+    padding: 80px 40px;
+    gap: 60px;
+  }
+  .hero .hero-text .hero-h1 {
+    font: 600 60px/70px "Inter", sans-serif;
+  }
+  .hero .hero-text .hero-form .hero-email {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 12px 14px;
+    background-color: FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.1254901961);
+    border-radius: 37px;
+    font: 500 14px "Inter", sans-serif;
+    color: #AAAAAA;
+  }
+  .hero .hero-text .hero-submit {
+    background-color: #3461FF;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 20px;
+    font-family: "Inter", sans-serif;
+    border: none;
+    border-radius: 70px;
+    color: #ffffff;
+  }
+}
+@media screen and (max-width: 910px) {
+  .nav {
+    padding: 18px 40px;
+  }
+  .hero {
+    padding: 40px 40px;
+    gap: 40px;
+  }
+  .hero .hero-text .hero-h1 {
+    font: 600 48px/60px "Inter", sans-serif;
+  }
+  .hero .hero-text .hero-form .hero-email {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 12px 14px;
+    background-color: FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.1254901961);
+    border-radius: 37px;
+    font: 500 14px "Inter", sans-serif;
+    color: #AAAAAA;
+    width: 60%;
+  }
+  .hero .hero-text .hero-submit {
+    width: 30%;
+    background-color: #3461FF;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 20px;
+    font-family: "Inter", sans-serif;
+    border: none;
+    border-radius: 70px;
+    color: #ffffff;
   }
 }
 @media screen and (max-width: 768px) {
@@ -997,6 +1283,29 @@
   .hero .hero-text .hero-h1 {
     font: 600 40px/48px "Inter", sans-serif;
     color: #000000;
+  }
+  .hero .hero-text .hero-form .hero-email {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 12px 14px;
+    background-color: FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.1254901961);
+    border-radius: 37px;
+    font: 500 14px "Inter", sans-serif;
+    color: #AAAAAA;
+    width: 50%;
+  }
+  .hero .hero-text .hero-submit {
+    width: 20%;
+    background-color: #3461FF;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 20px;
+    font-family: "Inter", sans-serif;
+    border: none;
+    border-radius: 70px;
+    color: #ffffff;
   }
   .hero .hero-img-div {
     width: 100%;
@@ -1383,7 +1692,7 @@
      object-fit: contain;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1440px) {
   header {
     display: flex;
     flex-direction: column;
@@ -1392,16 +1701,16 @@
   }
   .nav {
     justify-content: space-between;
-    min-width: 1200px;
-    padding: 20px 20px;
+    min-width: 1440px;
+    padding: 20px 120px;
     gap: 100px;
   }
   .hero {
     flex-direction: row;
     justify-content: center;
-    padding: 20px 20px;
+    padding: 20px 120px;
     gap: 72px;
-    min-width: 1200px;
+    min-width: 1440px;
   }
   .hero .hero-text {
     width: 40%;
@@ -1422,6 +1731,86 @@
     height: 600px;
     -o-object-fit: contain;
        object-fit: contain;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .nav {
+    padding: 18px 80px;
+  }
+  .hero {
+    padding: 80px 80px;
+    gap: 60px;
+  }
+  .hero .hero-text .hero-h1 {
+    font: 600 72px/80px "Inter", sans-serif;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .nav {
+    padding: 18px 40px;
+  }
+  .hero {
+    padding: 80px 40px;
+    gap: 60px;
+  }
+  .hero .hero-text .hero-h1 {
+    font: 600 60px/70px "Inter", sans-serif;
+  }
+  .hero .hero-text .hero-form .hero-email {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 12px 14px;
+    background-color: FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.1254901961);
+    border-radius: 37px;
+    font: 500 14px "Inter", sans-serif;
+    color: #AAAAAA;
+  }
+  .hero .hero-text .hero-submit {
+    background-color: #3461FF;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 20px;
+    font-family: "Inter", sans-serif;
+    border: none;
+    border-radius: 70px;
+    color: #ffffff;
+  }
+}
+@media screen and (max-width: 910px) {
+  .nav {
+    padding: 18px 40px;
+  }
+  .hero {
+    padding: 40px 40px;
+    gap: 40px;
+  }
+  .hero .hero-text .hero-h1 {
+    font: 600 48px/60px "Inter", sans-serif;
+  }
+  .hero .hero-text .hero-form .hero-email {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 12px 14px;
+    background-color: FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.1254901961);
+    border-radius: 37px;
+    font: 500 14px "Inter", sans-serif;
+    color: #AAAAAA;
+    width: 60%;
+  }
+  .hero .hero-text .hero-submit {
+    width: 30%;
+    background-color: #3461FF;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 20px;
+    font-family: "Inter", sans-serif;
+    border: none;
+    border-radius: 70px;
+    color: #ffffff;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1449,6 +1838,29 @@
   .hero .hero-text .hero-h1 {
     font: 600 40px/48px "Inter", sans-serif;
     color: #000000;
+  }
+  .hero .hero-text .hero-form .hero-email {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 12px 14px;
+    background-color: FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.1254901961);
+    border-radius: 37px;
+    font: 500 14px "Inter", sans-serif;
+    color: #AAAAAA;
+    width: 50%;
+  }
+  .hero .hero-text .hero-submit {
+    width: 20%;
+    background-color: #3461FF;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 20px;
+    font-family: "Inter", sans-serif;
+    border: none;
+    border-radius: 70px;
+    color: #ffffff;
   }
   .hero .hero-img-div {
     width: 100%;
@@ -1758,7 +2170,7 @@
      object-fit: contain;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1440px) {
   header {
     display: flex;
     flex-direction: column;
@@ -1767,16 +2179,16 @@
   }
   .nav {
     justify-content: space-between;
-    min-width: 1200px;
-    padding: 20px 20px;
+    min-width: 1440px;
+    padding: 20px 120px;
     gap: 100px;
   }
   .hero {
     flex-direction: row;
     justify-content: center;
-    padding: 20px 20px;
+    padding: 20px 120px;
     gap: 72px;
-    min-width: 1200px;
+    min-width: 1440px;
   }
   .hero .hero-text {
     width: 40%;
@@ -1797,6 +2209,86 @@
     height: 600px;
     -o-object-fit: contain;
        object-fit: contain;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .nav {
+    padding: 18px 80px;
+  }
+  .hero {
+    padding: 80px 80px;
+    gap: 60px;
+  }
+  .hero .hero-text .hero-h1 {
+    font: 600 72px/80px "Inter", sans-serif;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .nav {
+    padding: 18px 40px;
+  }
+  .hero {
+    padding: 80px 40px;
+    gap: 60px;
+  }
+  .hero .hero-text .hero-h1 {
+    font: 600 60px/70px "Inter", sans-serif;
+  }
+  .hero .hero-text .hero-form .hero-email {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 12px 14px;
+    background-color: FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.1254901961);
+    border-radius: 37px;
+    font: 500 14px "Inter", sans-serif;
+    color: #AAAAAA;
+  }
+  .hero .hero-text .hero-submit {
+    background-color: #3461FF;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 20px;
+    font-family: "Inter", sans-serif;
+    border: none;
+    border-radius: 70px;
+    color: #ffffff;
+  }
+}
+@media screen and (max-width: 910px) {
+  .nav {
+    padding: 18px 40px;
+  }
+  .hero {
+    padding: 40px 40px;
+    gap: 40px;
+  }
+  .hero .hero-text .hero-h1 {
+    font: 600 48px/60px "Inter", sans-serif;
+  }
+  .hero .hero-text .hero-form .hero-email {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 12px 14px;
+    background-color: FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.1254901961);
+    border-radius: 37px;
+    font: 500 14px "Inter", sans-serif;
+    color: #AAAAAA;
+    width: 60%;
+  }
+  .hero .hero-text .hero-submit {
+    width: 30%;
+    background-color: #3461FF;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 20px;
+    font-family: "Inter", sans-serif;
+    border: none;
+    border-radius: 70px;
+    color: #ffffff;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1824,6 +2316,29 @@
   .hero .hero-text .hero-h1 {
     font: 600 40px/48px "Inter", sans-serif;
     color: #000000;
+  }
+  .hero .hero-text .hero-form .hero-email {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 12px 14px;
+    background-color: FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.1254901961);
+    border-radius: 37px;
+    font: 500 14px "Inter", sans-serif;
+    color: #AAAAAA;
+    width: 50%;
+  }
+  .hero .hero-text .hero-submit {
+    width: 20%;
+    background-color: #3461FF;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 20px;
+    font-family: "Inter", sans-serif;
+    border: none;
+    border-radius: 70px;
+    color: #ffffff;
   }
   .hero .hero-img-div {
     width: 100%;
@@ -2144,7 +2659,7 @@
      object-fit: contain;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1440px) {
   header {
     display: flex;
     flex-direction: column;
@@ -2153,16 +2668,16 @@
   }
   .nav {
     justify-content: space-between;
-    min-width: 1200px;
-    padding: 20px 20px;
+    min-width: 1440px;
+    padding: 20px 120px;
     gap: 100px;
   }
   .hero {
     flex-direction: row;
     justify-content: center;
-    padding: 20px 20px;
+    padding: 20px 120px;
     gap: 72px;
-    min-width: 1200px;
+    min-width: 1440px;
   }
   .hero .hero-text {
     width: 40%;
@@ -2183,6 +2698,86 @@
     height: 600px;
     -o-object-fit: contain;
        object-fit: contain;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .nav {
+    padding: 18px 80px;
+  }
+  .hero {
+    padding: 80px 80px;
+    gap: 60px;
+  }
+  .hero .hero-text .hero-h1 {
+    font: 600 72px/80px "Inter", sans-serif;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .nav {
+    padding: 18px 40px;
+  }
+  .hero {
+    padding: 80px 40px;
+    gap: 60px;
+  }
+  .hero .hero-text .hero-h1 {
+    font: 600 60px/70px "Inter", sans-serif;
+  }
+  .hero .hero-text .hero-form .hero-email {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 12px 14px;
+    background-color: FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.1254901961);
+    border-radius: 37px;
+    font: 500 14px "Inter", sans-serif;
+    color: #AAAAAA;
+  }
+  .hero .hero-text .hero-submit {
+    background-color: #3461FF;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 20px;
+    font-family: "Inter", sans-serif;
+    border: none;
+    border-radius: 70px;
+    color: #ffffff;
+  }
+}
+@media screen and (max-width: 910px) {
+  .nav {
+    padding: 18px 40px;
+  }
+  .hero {
+    padding: 40px 40px;
+    gap: 40px;
+  }
+  .hero .hero-text .hero-h1 {
+    font: 600 48px/60px "Inter", sans-serif;
+  }
+  .hero .hero-text .hero-form .hero-email {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 12px 14px;
+    background-color: FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.1254901961);
+    border-radius: 37px;
+    font: 500 14px "Inter", sans-serif;
+    color: #AAAAAA;
+    width: 60%;
+  }
+  .hero .hero-text .hero-submit {
+    width: 30%;
+    background-color: #3461FF;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 20px;
+    font-family: "Inter", sans-serif;
+    border: none;
+    border-radius: 70px;
+    color: #ffffff;
   }
 }
 @media screen and (max-width: 768px) {
@@ -2210,6 +2805,29 @@
   .hero .hero-text .hero-h1 {
     font: 600 40px/48px "Inter", sans-serif;
     color: #000000;
+  }
+  .hero .hero-text .hero-form .hero-email {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 12px 14px;
+    background-color: FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.1254901961);
+    border-radius: 37px;
+    font: 500 14px "Inter", sans-serif;
+    color: #AAAAAA;
+    width: 50%;
+  }
+  .hero .hero-text .hero-submit {
+    width: 20%;
+    background-color: #3461FF;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 20px;
+    font-family: "Inter", sans-serif;
+    border: none;
+    border-radius: 70px;
+    color: #ffffff;
   }
   .hero .hero-img-div {
     width: 100%;
@@ -2609,7 +3227,7 @@
      object-fit: contain;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1440px) {
   header {
     display: flex;
     flex-direction: column;
@@ -2618,16 +3236,16 @@
   }
   .nav {
     justify-content: space-between;
-    min-width: 1200px;
-    padding: 20px 20px;
+    min-width: 1440px;
+    padding: 20px 120px;
     gap: 100px;
   }
   .hero {
     flex-direction: row;
     justify-content: center;
-    padding: 20px 20px;
+    padding: 20px 120px;
     gap: 72px;
-    min-width: 1200px;
+    min-width: 1440px;
   }
   .hero .hero-text {
     width: 40%;
@@ -2648,6 +3266,86 @@
     height: 600px;
     -o-object-fit: contain;
        object-fit: contain;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .nav {
+    padding: 18px 80px;
+  }
+  .hero {
+    padding: 80px 80px;
+    gap: 60px;
+  }
+  .hero .hero-text .hero-h1 {
+    font: 600 72px/80px "Inter", sans-serif;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .nav {
+    padding: 18px 40px;
+  }
+  .hero {
+    padding: 80px 40px;
+    gap: 60px;
+  }
+  .hero .hero-text .hero-h1 {
+    font: 600 60px/70px "Inter", sans-serif;
+  }
+  .hero .hero-text .hero-form .hero-email {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 12px 14px;
+    background-color: FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.1254901961);
+    border-radius: 37px;
+    font: 500 14px "Inter", sans-serif;
+    color: #AAAAAA;
+  }
+  .hero .hero-text .hero-submit {
+    background-color: #3461FF;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 20px;
+    font-family: "Inter", sans-serif;
+    border: none;
+    border-radius: 70px;
+    color: #ffffff;
+  }
+}
+@media screen and (max-width: 910px) {
+  .nav {
+    padding: 18px 40px;
+  }
+  .hero {
+    padding: 40px 40px;
+    gap: 40px;
+  }
+  .hero .hero-text .hero-h1 {
+    font: 600 48px/60px "Inter", sans-serif;
+  }
+  .hero .hero-text .hero-form .hero-email {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 12px 14px;
+    background-color: FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.1254901961);
+    border-radius: 37px;
+    font: 500 14px "Inter", sans-serif;
+    color: #AAAAAA;
+    width: 60%;
+  }
+  .hero .hero-text .hero-submit {
+    width: 30%;
+    background-color: #3461FF;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 20px;
+    font-family: "Inter", sans-serif;
+    border: none;
+    border-radius: 70px;
+    color: #ffffff;
   }
 }
 @media screen and (max-width: 768px) {
@@ -2675,6 +3373,29 @@
   .hero .hero-text .hero-h1 {
     font: 600 40px/48px "Inter", sans-serif;
     color: #000000;
+  }
+  .hero .hero-text .hero-form .hero-email {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 12px 14px;
+    background-color: FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.1254901961);
+    border-radius: 37px;
+    font: 500 14px "Inter", sans-serif;
+    color: #AAAAAA;
+    width: 50%;
+  }
+  .hero .hero-text .hero-submit {
+    width: 20%;
+    background-color: #3461FF;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 20px;
+    font-family: "Inter", sans-serif;
+    border: none;
+    border-radius: 70px;
+    color: #ffffff;
   }
   .hero .hero-img-div {
     width: 100%;
