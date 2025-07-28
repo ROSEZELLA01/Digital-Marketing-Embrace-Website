@@ -2425,7 +2425,7 @@
 }
 @media screen and (max-width: 1400px) {
   .our_work {
-    padding: 40px 80px;
+    padding: 40px 120px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -2447,9 +2447,15 @@
     gap: 20px;
   }
   .our_work .work_display .work_display_div {
+    width: 33%;
     display: flex;
     flex-direction: column;
     gap: 16px;
+  }
+  .our_work .work_display .work_display_div .work_display_img {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .our_work .work_display .work_display_div .work_display_p {
     font: 500 28px/100% "Inter", sans-serif;
