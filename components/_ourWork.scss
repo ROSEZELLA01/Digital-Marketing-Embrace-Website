@@ -61,16 +61,16 @@
 }
 }
 
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1250px){
 .our_work{
-    padding: 40px 120px;
+    padding: 40px 40px;
     display: flex;
     flex-direction: column;
     gap: 40px;
     
     .our_work_div{
         .our_work_div_h{
-            font: 500 64px/100% $primaryFont;
+            font: 500 52px/100% $primaryFont;
             color: #000000;
             text-align: center
         }
@@ -127,10 +127,12 @@
             }
         }
         .work_display{
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
+            flex-wrap: wrap;
             gap: 40px;
             .work_display_div{
+                width:45%;
                 .work_display_p{
                     font-size: 24px;
                 }
@@ -160,6 +162,7 @@
         .work_display{
             gap: 40px;
             .work_display_div{
+                width:100%;
                 .work_display_img{
                     width: 100%;
                     height: auto;
@@ -170,8 +173,8 @@
             }
         }
         .our_work_button{
-            padding: 10px 20px;
-            font-size: 14px;
+            padding: 14px 24px;
+            font-size: 16px;
         }
     }
     
