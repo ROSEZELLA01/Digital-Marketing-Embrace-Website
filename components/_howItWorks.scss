@@ -16,79 +16,277 @@
     justify-content: flex-start;
     align-items: flex-start;
     .how {
-      
       .how-heading {
-        font:500 64px/100% $primaryFont ;
+        font: 500 64px/100% $primaryFont;
         color: #000000;
         text-transform: capitalize;
         margin-bottom: 20px;
       }
-      .how-text{
-        font:500 18px/36px $primaryFont ;
+      .how-text {
+        font: 500 18px/36px $primaryFont;
         color: #00000060;
         width: 499px;
       }
-      .how-img{
+      .how-img {
         width: 487px;
         height: 311px;
         object-fit: contain;
       }
     }
   }
-  .works{
+  .works {
     width: 50%;
     display: flex;
     flex-direction: column;
     gap: 42px;
-    .work{
-        display: flex;
-        flex-direction: row;
-    align-items: center;
-        gap: 32px;
+    .work {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 32px;
 
-        .work-img{
-            width: 100px;
-            height: 100px;
-            object-fit: contain;
+      .work-img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+      }
+      .work-text {
+        .work-heading {
+          font: 500 32px/32px $primaryFont;
+          color: #000000;
         }
-        .work-text{
-            .work-heading{
-                font:500 32px/32px $primaryFont ;
-                color: #000000;
-            }
-            .work-p{
-                font:500 16px/32px $primaryFont ;
-                color: #00000060;
-                margin-top: 8px;
-            }
+        .work-p {
+          font: 500 16px/32px $primaryFont;
+          color: #00000060;
+          margin-top: 8px;
         }
+      }
     }
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .howItWorks{
-    width: 1200px;
+@media screen and (min-width: 1400px) {
+  .howItWorks {
+    width: 1400px;
     flex-direction: row;
     justify-content: space-between;
     justify-self: center;
-align-items: center;
-gap: 48px;
-padding: 0;
-
+    align-items: center;
+    gap: 48px;
+    padding: 0 120px;
   }
 }
-  
 
+@media screen and (max-width: 1320px) {
+  .howItWorks {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-self: center;
+    align-items: center;
+    gap: 48px;
+    padding: 0 80px;
+    .hows {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .how {
+        .how-heading {
+          font: 500 52px/100% $primaryFont;
+          color: #000000;
+          text-transform: capitalize;
+          margin-bottom: 20px;
+        }
+        .how-text {
+          font: 500 16px/36px $primaryFont;
+          color: #00000060;
+          width: 100%;
+        }
+        .how-img {
+          width: 487px;
+          height: 311px;
+          object-fit: contain;
+        }
+      }
+    }
+    .works {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      .work {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
 
-@media screen and (max-width:768px){
+        .work-img {
+          width: 80px;
+          height: 80px;
+          object-fit: contain;
+        }
+        .work-text {
+          .work-heading {
+            font: 500 28px/32px $primaryFont;
+            color: #000000;
+          }
+          .work-p {
+            font: 500 16px/32px $primaryFont;
+            color: #00000060;
+            margin-top: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1165px) {
+  .howItWorks {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-self: center;
+    align-items: center;
+    gap: 48px;
+    padding: 0 40px;
+    .hows {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: space-between;
+      align-items: flex-start;
+      .how {
+        .how-heading {
+          font: 500 48px/100% $primaryFont;
+          color: #000000;
+          text-transform: capitalize;
+          margin-bottom: 20px;
+        }
+        .how-text {
+          font: 500 16px/36px $primaryFont;
+          color: #00000060;
+          width: 100%;
+        }
+       
+      }
+       .how-img {
+          width: 100%;
+          height: fit-content;
+          object-fit: contain;
+        }
+    }
+    .works {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      .work {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+
+        .work-img {
+          width: 60px;
+          height: 60px;
+          object-fit: contain;
+        }
+        .work-text {
+          .work-heading {
+            font: 500 24px/28px $primaryFont;
+            color: #000000;
+          }
+          .work-p {
+            font: 500 14px/20px $primaryFont;
+            color: #00000060;
+            margin-top: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 894px) {
+  .howItWorks {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-self: center;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 20px;
+    .hows {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: space-between;
+      align-items: flex-start;
+      .how {
+        .how-heading {
+          font: 500 38px/100% $primaryFont;
+          color: #000000;
+          text-transform: capitalize;
+          margin-bottom: 20px;
+        }
+        .how-text {
+          font: 500 14px/28px $primaryFont;
+          color: #00000060;
+          width: 100%;
+        }
+       
+      }
+       .how-img {
+          width: 100%;
+          height: fit-content;
+          object-fit: contain;
+        }
+    }
+    .works {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      .work {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+
+        .work-img {
+          width: 60px;
+          height: 60px;
+          object-fit: contain;
+        }
+        .work-text {
+          .work-heading {
+            font: 500 24px/28px $primaryFont;
+            color: #000000;
+          }
+          .work-p {
+            font: 500 14px/20px $primaryFont;
+            color: #00000060;
+            margin-top: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
   .howItWorks {
     flex-direction: column;
     padding: 40px 20px;
     height: auto;
     gap: 40px;
 
-    .hows, .works {
+    .hows,
+    .works {
       width: 100%;
       align-items: center;
       gap: 20px;
@@ -107,46 +305,113 @@ padding: 0;
           line-height: 24px;
           justify-self: center;
         }
-        .how-img {
-          width: 100%;
-          height: auto;
-        }
+       
       }
+      .how-img {
+          width: 80%;
+          height: fit-content;
+          object-fit: contain;
+        }
     }
 
     .works {
       justify-content: center;
+      gap: 32px;
       .work {
         flex-direction: row;
         align-items: flex-start;
         text-align: left;
         gap: 20px;
-        width: 65%;
+        width: 80%;
 
         .work-img {
-          width: 40px;
-          height: 40px;
+          width: 60px;
+          height: 60px;
         }
         .work-text {
           .work-heading {
-            font-size: 24px;
+            font-size: 32px;
             line-height: 32px;
           }
           .work-p {
-            font-size: 14px;
-            line-height: 20px;
+            font-size: 16px;
+            line-height: 32px;
           }
         }
       }
     }
   }
-  
+}
+@media screen and (max-width: 650px) {
+  .howItWorks {
+    flex-direction: column;
+    padding: 40px 20px;
+    height: auto;
+    gap: 40px;
+
+    .hows,
+    .works {
+      width: 100%;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .hows {
+      .how {
+        text-align: center;
+        .how-heading {
+          font-size: 36px;
+          line-height: 44px;
+        }
+        .how-text {
+          width: 100%;
+          font-size: 16px;
+          line-height: 24px;
+          justify-self: center;
+        }
+       
+      }
+      .how-img {
+          width: 80%;
+          height: fit-content;
+          object-fit: contain;
+        }
+    }
+
+    .works {
+      justify-content: center;
+      gap: 32px;
+      .work {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+        gap: 20px;
+        width: 100%;
+
+        .work-img {
+          width: 60px;
+          height: 60px;
+        }
+        .work-text {
+          .work-heading {
+            font-size: 32px;
+            line-height: 32px;
+          }
+          .work-p {
+            font-size: 16px;
+            line-height: 32px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {
   .howItWorks {
     padding: 40px 20px;
-    .hows, .works {
+    .hows,
+    .works {
       width: 100%;
     }
     .hows {
@@ -160,14 +425,12 @@ padding: 0;
           font-size: 14px;
           line-height: 20px;
         }
-        .how-img {
-          display: block;
-          width:  300px;
-          height: 300px;
-          object-fit: contain;
-          margin: 12px;
-        }
       }
+      .how-img {
+          width: 100%;
+          height: fit-content;
+          object-fit: contain;
+        }
     }
     .works {
       gap: 28px;
@@ -177,7 +440,6 @@ padding: 0;
         align-items: start;
         width: 100%;
         gap: 12px;
-        
 
         .work-img {
           width: 40px;
@@ -193,11 +455,10 @@ padding: 0;
           .work-p {
             font-size: 12px;
             line-height: 18px;
-            text-align: left;
+            text-align: justify;
           }
         }
       }
     }
   }
-  
 }
